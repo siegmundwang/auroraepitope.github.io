@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuroraEpitope - Illuminating Cancer Darkness with Non-Canonical Neoepitopes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">A</span>
+                <span class="logo-text">AuroraEpitope</span>
+            </a>
+            <div class="nav-right">
+                <div class="lang-switch" id="langSwitch">
+                    <span class="lang-btn active" data-lang="zh">简中</span>
+                    <span class="lang-sep">/</span>
+                    <span class="lang-btn" data-lang="tw">繁中</span>
+                    <span class="lang-sep">/</span>
+                    <span class="lang-btn" data-lang="en">EN</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><span data-zh="首页" data-tw="首頁" data-en="Home">首页</span></a></li>
+                <li><a href="#about" class="nav-link"><span data-zh="关于我们" data-tw="關於我們" data-en="About">关于我们</span></a></li>
+                <li><a href="#services" class="nav-link"><span data-zh="核心业务" data-tw="核心業務" data-en="Services">核心业务</span></a></li>
+                <li><a href="#pipeline" class="nav-link"><span data-zh="产品管线" data-tw="產品管線" data-en="Pipeline">产品管线</span></a></li>
+                <li><a href="#technology" class="nav-link"><span data-zh="技术平台" data-tw="技術平台" data-en="Technology">技术平台</span></a></li>
+                <li><a href="#advantages" class="nav-link"><span data-zh="竞争优势" data-tw="競爭優勢" data-en="Advantages">竞争优势</span></a></li>
+                <li><a href="#contact" class="nav-link"><span data-zh="联系我们" data-tw="聯絡我們" data-en="Contact">联系我们</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区域 -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-tag" data-zh="AuroraEpitope Ltd. (启明星位)" data-tw="AuroraEpitope Ltd. (啟明星位)" data-en="AuroraEpitope Ltd. (AuroraEpitope)">AuroraEpitope Ltd. (启明星位)</p>
+                <h1 class="hero-title">
+                    <span data-zh="以非经典新表位之光，照亮癌症黑暗" data-tw="以非經典新表位之光，照亮癌症黑暗" data-en="Illuminating Cancer Darkness<br>with the Light of Non-Canonical Neoepitopes">以非经典新表位之光，照亮癌症黑暗</span>
+                </h1>
+                <p class="hero-description">
+                    <span data-zh="我们是致力于非经典新表位（Non-Canonical Neoepitopes）发现与治疗性疫苗研发的前沿生物科技公司。通过AI增强的表位发现平台、mRNA-LNP技术，以及基于患者WES/RNA数据的新抗原分析服务，为癌症患者与衰老研究领域带来突破性解决方案。" data-tw="我們致力於非經典新表位（Non-Canonical Neoepitopes）的發現與治療性疫苗研發。透過AI增強的表位發現平台、mRNA-LNP技術，以及基於患者WES/RNA資料的新抗原分析服務，為癌症患者與衰老研究領域帶來突破性解決方案。" data-en="We are a pioneering biotech company dedicated to the discovery of non-canonical neoepitopes and the development of therapeutic vaccines. Through our AI-enhanced epitope discovery platform, mRNA-LNP technology, and patient WES/RNA-based neoantigen analysis services, we deliver breakthrough solutions for cancer patients and aging research.">我们是致力于非经典新表位（Non-Canonical Neoepitopes）发现与治疗性疫苗研发的前沿生物科技公司。通过AI增强的表位发现平台、mRNA-LNP技术，以及基于患者WES/RNA数据的新抗原分析服务，为癌症患者与衰老研究领域带来突破性解决方案。</span>
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">5</span>
+                        <span class="hero-stat-label" data-zh="疫苗管线" data-tw="疫苗管線" data-en="Vaccine Pipelines">疫苗管线</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">2</span>
+                        <span class="hero-stat-label" data-zh="美国专利" data-tw="美國專利" data-en="US Patents">美国专利</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">1000+</span>
+                        <span class="hero-stat-label" data-zh="新型免疫靶点" data-tw="新型免疫標的" data-en="Novel Immune Targets">新型免疫靶点</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">10,000+</span>
+                        <span class="hero-stat-label" data-zh="学术论文引用" data-tw="學術論文引用" data-en="Citations">学术论文引用</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary"><span data-zh="探索核心业务" data-tw="探索核心業務" data-en="Explore Services">探索核心业务</span></a>
+                    <a href="#pipeline" class="btn btn-outline"><span data-zh="查看产品管线" data-tw="查看產品管線" data-en="View Pipeline">查看产品管线</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="关于 AuroraEpitope" data-tw="關於 AuroraEpitope" data-en="About AuroraEpitope">关于 AuroraEpitope</span></h2>
+                <p class="section-subtitle"><span data-zh="完整的治疗性疫苗研发方案 + AI增强非经典表位发现平台" data-tw="完整的治療性疫苗研發方案 + AI增強非經典表位發現平台" data-en="Complete Therapeutic Vaccine R&D Solutions + AI-Enhanced Non-Canonical Epitope Discovery Platform">完整的治疗性疫苗研发方案 + AI增强非经典表位发现平台</span></p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card-main">
+                    <div class="about-icon"><i class="fas fa-dna"></i></div>
+                    <h3><span data-zh="我们的使命" data-tw="我們的使命" data-en="Our Mission">我们的使命</span></h3>
+                    <p>
+                        <span data-zh="AuroraEpitope专注于非经典新表位的发现与应用开发。传统经典新表位仅覆盖不到40%的人群，而我们的非经典表位技术可覆盖超过90%的人群，开辟了400亿美元的市场空间。除了治疗性疫苗研发管线外，我们还提供基于患者WES/RNA测序数据的精准新抗原列表生成服务，以及与衰老相关基因的评估分析，覆盖从基础研究到临床转化的全链路。" data-tw="AuroraEpitope專注於非經典新表位的發現與應用開發。傳統經典新表位僅覆蓋不到40%的人群，而我們的非經典表位技術可覆蓋超過90%的人群，開闢了400億美元的市場空間。除了治療性疫苗研發管線外，我們還提供基於患者WES/RNA定序資料的精準新抗原列表生成服務，以及與衰老相關基因的評估分析，覆蓋從基礎研究到臨床轉化的全鏈路。" data-en="AuroraEpitope focuses on the discovery and application of non-canonical neoepitopes. While conventional canonical neoepitopes cover less than 40% of the population, our non-canonical epitope technology reaches over 90%, unlocking a $40 billion market opportunity. Beyond our therapeutic vaccine pipeline, we also provide precise neoantigen list generation services based on patient WES/RNA sequencing data, as well as aging-related gene assessment analysis, covering the entire spectrum from basic research to clinical translation.">AuroraEpitope专注于非经典新表位的发现与应用开发。传统经典新表位仅覆盖不到40%的人群，而我们的非经典表位技术可覆盖超过90%的人群，开辟了400亿美元的市场空间。除了治疗性疫苗研发管线外，我们还提供基于患者WES/RNA测序数据的精准新抗原列表生成服务，以及与衰老相关基因的评估分析，覆盖从基础研究到临床转化的全链路。</span>
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-number">HK$10M+</div>
+                        <div class="highlight-label" data-zh="研发投入" data-tw="研發投入" data-en="R&D Investment">研发投入</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number">5</div>
+                        <div class="highlight-label" data-zh="First-in-Class 疫苗管线" data-tw="First-in-Class 疫苗管線" data-en="First-in-Class Pipelines">First-in-Class 疫苗管线</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number">HK$1.6M</div>
+                        <div class="highlight-label" data-zh="非稀释性融资" data-tw="非稀釋性融資" data-en="Non-dilutive Funding">非稀释性融资</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number">20<span data-zh="年" data-tw=" 年" data-en=" Yrs">年</span></div>
+                        <div class="highlight-label" data-zh="肿瘤学领域专业经验" data-tw="腫瘤學領域專業經驗" data-en="Oncology Expertise">肿瘤学领域专业经验</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心业务 -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="核心业务" data-tw="核心業務" data-en="Core Services">核心业务</span></h2>
+                <p class="section-subtitle"><span data-zh="从新抗原发现到治疗性疫苗，再到衰老基因评估的全栈生物科技服务" data-tw="從新抗原發現到治療性疫苗，再到衰老基因評估的全棧生物科技服務" data-en="Full-stack biotech services from neoantigen discovery to therapeutic vaccines and aging gene assessment">从新抗原发现到治疗性疫苗，再到衰老基因评估的全栈生物科技服务</span></p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-badge" data-zh="核心管线" data-tw="核心管線" data-en="Core Pipeline">核心管线</div>
+                    <div class="service-icon"><i class="fas fa-syringe"></i></div>
+                    <h3><span data-zh="治疗性疫苗研发" data-tw="治療性疫苗研發" data-en="Therapeutic Vaccine R&D">治疗性疫苗研发</span></h3>
+                    <p><span data-zh="基于非经典新表位的现货型（Off-the-shelf）mRNA-LNP肿瘤疫苗研发管线，覆盖胰腺癌、三阴性乳腺癌、胶质母细胞瘤等多种难治性癌症。5条First-in-Class管线处于临床前阶段。" data-tw="基於非經典新表位的現貨型（Off-the-shelf）mRNA-LNP腫瘤疫苗研發管線，覆蓋胰臟癌、三陰性乳癌、膠質母細胞瘤等多種難治性癌症。5條First-in-Class管線處於臨床前階段。" data-en="Off-the-shelf mRNA-LNP tumor vaccine pipelines based on non-canonical neoepitopes, covering pancreatic cancer, TNBC, glioblastoma and other hard-to-treat cancers. 5 First-in-Class pipelines at preclinical stage.">基于非经典新表位的现货型（Off-the-shelf）mRNA-LNP肿瘤疫苗研发管线，覆盖胰腺癌、三阴性乳腺癌、胶质母细胞瘤等多种难治性癌症。5条First-in-Class管线处于临床前阶段。</span></p>
+                    <div class="service-tags">
+                        <span>mRNA-LNP</span>
+                        <span data-zh="现货型疫苗" data-tw="現貨型疫苗" data-en="Off-the-shelf">现货型疫苗</span>
+                        <span>Neoepitope</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-badge" data-zh="数据服务" data-tw="資料服務" data-en="Data Service">数据服务</div>
+                    <div class="service-icon"><i class="fas fa-microscope"></i></div>
+                    <h3><span data-zh="新抗原列表生成" data-tw="新抗原列表生成" data-en="Neoantigen List Generation">新抗原列表生成</span></h3>
+                    <p><span data-zh="基于患者的全外显子组测序（WES）和RNA测序数据，通过我们的AI增强平台生成高置信度的可用新抗原列表，为个性化免疫治疗方案提供精准的靶点支持。" data-tw="基於患者的全外顯子組定序（WES）和RNA定序資料，透過我們的AI增強平台生成高置信度的可用新抗原列表，為客製化免疫治療方案提供精準的標的支持。" data-en="Based on patient Whole Exome Sequencing (WES) and RNA-seq data, we generate high-confidence actionable neoantigen lists through our AI-enhanced platform, providing precise target support for personalized immunotherapy.">基于患者的全外显子组测序（WES）和RNA测序数据，通过我们的AI增强平台生成高置信度的可用新抗原列表，为个性化免疫治疗方案提供精准的靶点支持。</span></p>
+                    <div class="service-tags">
+                        <span>WES</span>
+                        <span>RNA-seq</span>
+                        <span>HLA Typing</span>
+                        <span data-zh="免疫原性预测" data-tw="免疫原性預測" data-en="Immunogenicity Prediction">免疫原性预测</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-badge" data-zh="前沿研究" data-tw="前沿研究" data-en="Frontier Research">前沿研究</div>
+                    <div class="service-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <h3><span data-zh="衰老相关基因评估" data-tw="衰老相關基因評估" data-en="Aging-Related Gene Assessment">衰老相关基因评估</span></h3>
+                    <p><span data-zh="利用多组学数据分析平台评估与衰老相关的基因表达谱和调控网络，识别衰老标志物（Senescence Markers），为衰老机制研究和抗衰老药物开发提供数据驱动的科学依据。" data-tw="利用多組學資料分析平台評估與衰老相關的基因表現譜和調控網路，識別衰老標誌物（Senescence Markers），為衰老機制研究和抗衰老藥物開發提供資料驅動的科學依據。" data-en="Leveraging our multi-omics data analysis platform to evaluate aging-related gene expression profiles and regulatory networks, identify senescence markers, and provide data-driven scientific evidence for aging mechanism research and anti-aging drug development.">利用多组学数据分析平台评估与衰老相关的基因表达谱和调控网络，识别衰老标志物（Senescence Markers），为衰老机制研究和抗衰老药物开发提供数据驱动的科学依据。</span></p>
+                    <div class="service-tags">
+                        <span data-zh="衰老评估" data-tw="衰老評估" data-en="Senescence Profiling">衰老评估</span>
+                        <span>Biomarker</span>
+                        <span>Multi-omics</span>
+                        <span data-zh="调控网络" data-tw="調控網路" data-en="Regulatory Network">调控网络</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心团队 -->
+    <section class="team section-padding" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="核心团队" data-tw="核心團隊" data-en="Core Team">核心团队</span></h2>
+                <p class="section-subtitle"><span data-zh="院士领衔顾问团队，全方位制药专业能力" data-tw="院士領銜顧問團隊，全方位製藥專業能力" data-en="Academician-Led Advisory Team & Full-Spectrum Pharma Expertise">院士领衔顾问团队，全方位制药专业能力</span></p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                    <h3>王宪赓 (WANG Xiangeng)</h3>
+                    <span class="team-role" data-zh="CEO 首席执行官" data-tw="CEO 首席執行官" data-en="CEO">CEO 首席执行官</span>
+                    <p><span data-zh="香港城市大学与香港中文大学联合培养生物医学博士，香港中文大学医学院研究员。超过5年计算生物学、药学与免疫学经验，连续创业者。" data-tw="香港城市大學與香港中文大學聯合培養生物醫學博士，香港中文大學醫學院研究員。超過5年計算生物學、藥學與免疫學經驗，連續創業者。" data-en="Jointly trained Ph.D. in Biomedical Sciences at CityU and CUHK. Research Associate at the Faculty of Medicine, CUHK. >5 years experience in computational biology, pharmacy, and immunology. Serial entrepreneur.">香港城市大学与香港中文大学联合培养生物医学博士，香港中文大学医学院研究员。超过5年计算生物学、药学与免疫学经验，连续创业者。</span></p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                    <h3>王鑫 (WANG Xin)</h3>
+                    <span class="team-role" data-zh="联合创始人 & CSO 首席科学家" data-tw="聯合創辦人 & CSO 首席科學家" data-en="Co-founder & CSO">联合创始人 & CSO 首席科学家</span>
+                    <p><span data-zh="香港中文大学医学院副教授（终身教职），李嘉诚健康科学研究所PI。剑桥大学肿瘤学博士，哈佛医学院博士后。100+篇高影响力论文，联合创立多家估值超5千万的生物科技公司。" data-tw="香港中文大學醫學院副教授（終身教職），李嘉誠健康科學研究所PI。劍橋大學腫瘤學博士，哈佛醫學院博士後。100+篇高影響力論文，聯合創立多家估值超5千萬的生物科技公司。" data-en="Associate Professor (tenured) at CUHK Faculty of Medicine. Ph.D. in Oncology at Cambridge, Postdoc at Harvard Medical School. 100+ high-impact publications. Co-founder of multiple biotech startups valued >$50M.">香港中文大学医学院副教授（终身教职），李嘉诚健康科学研究所PI。剑桥大学肿瘤学博士，哈佛医学院博士后。100+篇高影响力论文，联合创立多家估值超5千万的生物科技公司。</span></p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                    <h3>罗天力 (LUO Tianli)</h3>
+                    <span class="team-role" data-zh="药物科学家" data-tw="藥物科學家" data-en="Pharmaceutical Scientist">药物科学家</span>
+                    <p><span data-zh="中科院化学所博士，香港大学博士后，香港中文大学访问学者。超过3年工业级RNA药物开发经验，负责先导化合物设计、化学修饰方案和LNP平台研发。" data-tw="中科院化學所博士，香港大學博士後，香港中文大學訪問學者。超過3年工業級RNA藥物開發經驗，負責先導化合物設計、化學修飾方案和LNP平台研發。" data-en="Ph.D. from Institute of Chemistry, CAS. Postdoc at HKU, Visiting Scholar at CUHK. >3 years industrial-level RNA drug development. Leads lead compound design, chemical modification, and LNP platform R&D.">中科院化学所博士，香港大学博士后，香港中文大学访问学者。超过3年工业级RNA药物开发经验，负责先导化合物设计、化学修饰方案和LNP平台研发。</span></p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                    <h3>张为民 (ZHANG Weimin)</h3>
+                    <span class="team-role" data-zh="肿瘤学专家" data-tw="腫瘤學專家" data-en="Oncology Expert">肿瘤学专家</span>
+                    <p><span data-zh="北京大学张钦民院士课题组博士，北京肿瘤医院分子肿瘤学实验室副研究员。北京杰出青年人才，负责癌症疫苗的实验验证工作。" data-tw="北京大學張欽民院士課題組博士，北京腫瘤醫院分子腫瘤學實驗室副研究員。北京傑出青年人才，負責癌症疫苗的實驗驗證工作。" data-en="Ph.D. in Academician ZHANG Qinmin's group at Peking University. Associate Researcher at Molecular Oncology Lab, Beijing Cancer Hospital. Outstanding Young Talent in Beijing. Leads cancer vaccine experimental validation.">北京大学张钦民院士课题组博士，北京肿瘤医院分子肿瘤学实验室副研究员。北京杰出青年人才，负责癌症疫苗的实验验证工作。</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 顾问委员会 -->
+    <section class="advisors section-padding" id="advisors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="顾问委员会" data-tw="顧問委員會" data-en="Advisory Board">顾问委员会</span></h2>
+                <p class="section-subtitle"><span data-zh="院士级专家团队，覆盖AI、肿瘤学、转化医学与创业指导" data-tw="院士級專家團隊，覆蓋AI、腫瘤學、轉化醫學與創業指導" data-en="Academician-level experts covering AI, oncology, translational medicine and entrepreneurship">院士级专家团队，覆盖AI、肿瘤学、转化医学与创业指导</span></p>
+            </div>
+            <div class="advisors-grid">
+                <div class="advisor-card">
+                    <h4>詹启敏 (ZHAN Qinmin)</h4>
+                    <span data-zh="首席顾问" data-tw="首席顧問" data-en="Chief Consultant">首席顾问</span>
+                    <p><span data-zh="中国工程院院士，国家卫健委产业科技专项专家委员会主任，国家重大新药创制项目生物制药专家组组长。" data-tw="中國工程院院士，國家衛健委產業科技專項專家委員會主任，國家重大新藥創製項目生物製藥專家組組長。" data-en="Academician of Chinese Academy of Engineering. Director of Expert Committee for National Health Commission Industry Science & Technology Project.">中国工程院院士，国家卫健委产业科技专项专家委员会主任，国家重大新药创制项目生物制药专家组组长。</span></p>
+                </div>
+                <div class="advisor-card">
+                    <h4>徐兵河 (XU Binghe)</h4>
+                    <span data-zh="首席肿瘤学顾问" data-tw="首席腫瘤學顧問" data-en="Chief Oncology Consultant">首席肿瘤学顾问</span>
+                    <p><span data-zh="中国工程院院士，北京协和医学院教授，中国医学科学院肿瘤医院内科主任，国家新抗肿瘤药物临床研究中心主任。" data-tw="中國工程院院士，北京協和醫學院教授，中國醫學科學院腫瘤醫院內科主任，國家新抗腫瘤藥物臨床研究中心主任。" data-en="Academician of CAE. Professor at PUMC. Director of Internal Medicine, Cancer Hospital, CAMS. Director of National Clinical Research Center for New Anti-tumor Drugs.">中国工程院院士，北京协和医学院教授，中国医学科学院肿瘤医院内科主任，国家新抗肿瘤药物临床研究中心主任。</span></p>
+                </div>
+                <div class="advisor-card">
+                    <h4>高峰 (GAO Feng)</h4>
+                    <span data-zh="人工智能顾问" data-tw="人工智慧顧問" data-en="AI Consultant">人工智能顾问</span>
+                    <p><span data-zh="中山大学附属第六医院教授，中山大学"百人计划"引进人才，上海人工智能实验室顾问科学家，专注于精准医学AI解决方案。" data-tw="中山大學附屬第六醫院教授，中山大學「百人計畫」引進人才，上海人工智慧實驗室顧問科學家，專注於精準醫學AI解決方案。" data-en="Professor at Sixth Affiliated Hospital, Sun Yat-sen University. &quot;Hundred Talents&quot; recruit. Advisory Scientist at Shanghai AI Laboratory. Specializing in AI for precision medicine.">中山大学附属第六医院教授，中山大学"百人计划"引进人才，上海人工智能实验室顾问科学家，专注于精准医学AI解决方案。</span></p>
+                </div>
+                <div class="advisor-card">
+                    <h4>施佳海 (SHI Jiahai)</h4>
+                    <span data-zh="创业顾问" data-tw="創業顧問" data-en="Entrepreneurship Consultant">创业顾问</span>
+                    <p><span data-zh="新加坡国立大学杨潞龄医学院生物化学系助理教授，连续生物科技创业者，15年以上平台开发与商业化经验。" data-tw="新加坡國立大學楊潞齡醫學院生物化學系助理教授，連續生物科技創業者，15年以上平台開發與商業化經驗。" data-en="Asst. Professor at NUS Yong Loo Lin School of Medicine. Serial biotech entrepreneur. 15+ years in platform development and commercialization.">新加坡国立大学杨潞龄医学院生物化学系助理教授，连续生物科技创业者，15年以上平台开发与商业化经验。</span></p>
+                </div>
+                <div class="advisor-card">
+                    <h4>王明 (WANG Ming)</h4>
+                    <span data-zh="制药顾问" data-tw="製藥顧問" data-en="Pharma Consultant">制药顾问</span>
+                    <p><span data-zh="中科院化学所教授，NSFC杰出青年学者，100+篇学术论文，近10,000次引用，H-index 50。15年以上RNA药物开发与商业化经验。" data-tw="中科院化學所教授，NSFC傑出青年學者，100+篇學術論文，近10,000次引用，H-index 50。15年以上RNA藥物開發與商業化經驗。" data-en="Professor at ICCAS, CAS. NSFC Distinguished Young Scholar. 100+ papers, ~10,000 citations, H-index 50. 15+ years RNA drug development.">中科院化学所教授，NSFC杰出青年学者，100+篇学术论文，近10,000次引用，H-index 50。15年以上RNA药物开发与商业化经验。</span></p>
+                </div>
+                <div class="advisor-card">
+                    <h4>顾健 (GU Jennifer)</h4>
+                    <span data-zh="转化研究顾问" data-tw="轉化研究顧問" data-en="Translational Research Consultant">转化研究顾问</span>
+                    <p><span data-zh="阿斯利康全球研发（中国）科学负责人，早期肿瘤项目负责人，外部转化研究负责人。" data-tw="阿斯特捷利康全球研發（中國）科學負責人，早期腫瘤專案負責人，外部轉化研究負責人。" data-en="Science Lead at AstraZeneca Global R&amp;D (China). Early Oncology Project Lead. External Translational Research Lead.">阿斯利康全球研发（中国）科学负责人，早期肿瘤项目负责人，外部转化研究负责人。</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品管线 -->
+    <section class="pipeline section-padding" id="pipeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="疫苗研发管线" data-tw="疫苗研發管線" data-en="Vaccine Pipeline">疫苗研发管线</span></h2>
+                <p class="section-subtitle"><span data-zh="5条First-in-Class疫苗管线，覆盖多种难治性癌症及衰老领域" data-tw="5條First-in-Class疫苗管線，覆蓋多種難治性癌症及衰老領域" data-en="5 First-in-Class vaccine pipelines covering hard-to-treat cancers and senolytics">5条First-in-Class疫苗管线，覆盖多种难治性癌症及衰老领域</span></p>
+            </div>
+            <div class="pipeline-table-wrapper">
+                <div class="pipeline-stage-header">
+                    <div class="pipeline-name-col"><span data-zh="管线名称" data-tw="管線名稱" data-en="Pipeline">管线名称</span></div>
+                    <div class="pipeline-stage-col"><span data-zh="表位发现" data-tw="表位發現" data-en="Discovery">表位发现</span></div>
+                    <div class="pipeline-stage-col"><span data-zh="疫苗配方" data-tw="疫苗配方" data-en="Formulation">疫苗配方</span></div>
+                    <div class="pipeline-stage-col"><span data-zh="临床前" data-tw="臨床前" data-en="Pre-clinical">临床前</span></div>
+                    <div class="pipeline-stage-col">CDMO &amp; IND</div>
+                    <div class="pipeline-stage-col"><span data-zh="临床试验" data-tw="臨床試驗" data-en="Clinical Trial">临床试验</span></div>
+                </div>
+                <div class="pipeline-row">
+                    <div class="pipeline-name-col">
+                        <strong>DO-PDAC101</strong>
+                        <span data-zh="首个针对亚洲人群的现货型mRNA-LNP胰腺癌疫苗" data-tw="首個針對亞洲人群的現貨型mRNA-LNP胰臟癌疫苗" data-en="First off-the-shelf mRNA-LNP pancreatic cancer vaccine for Asian populations">首个针对亚洲人群的现货型mRNA-LNP胰腺癌疫苗</span>
+                    </div>
+                    <div class="pipeline-stage-col done"></div>
+                    <div class="pipeline-stage-col done"></div>
+                    <div class="pipeline-stage-col active"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                </div>
+                <div class="pipeline-row">
+                    <div class="pipeline-name-col">
+                        <strong>DO-BRCA101</strong>
+                        <span data-zh="首个基于saRNA的三阴性乳腺癌现货型疫苗" data-tw="首個基於saRNA的三陰性乳癌現貨型疫苗" data-en="First off-the-shelf TNBC vaccine based on saRNA">首个基于saRNA的三阴性乳腺癌现货型疫苗</span>
+                    </div>
+                    <div class="pipeline-stage-col done"></div>
+                    <div class="pipeline-stage-col done"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                </div>
+                <div class="pipeline-row">
+                    <div class="pipeline-name-col">
+                        <strong>DO-GBM101</strong>
+                        <span data-zh="首个胶质母细胞瘤现货型疫苗" data-tw="首個膠質母細胞瘤現貨型疫苗" data-en="First glioblastoma off-the-shelf cancer vaccine">首个胶质母细胞瘤现货型疫苗</span>
+                    </div>
+                    <div class="pipeline-stage-col done"></div>
+                    <div class="pipeline-stage-col active"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                </div>
+                <div class="pipeline-row">
+                    <div class="pipeline-name-col">
+                        <strong>DO-GI101</strong>
+                        <span data-zh="首个针对胃肠道癌症间质亚型的mRNA疫苗" data-tw="首個針對胃腸道癌症間質亞型的mRNA疫苗" data-en="First mRNA vaccine targeting mesenchymal subtype of GI cancers">首个针对胃肠道癌症间质亚型的mRNA疫苗</span>
+                    </div>
+                    <div class="pipeline-stage-col active"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                </div>
+                <div class="pipeline-row">
+                    <div class="pipeline-name-col">
+                        <strong>DO-***101</strong>
+                        <span data-zh="首个结合经典与非经典表位的衰老细胞清除疫苗" data-tw="首個結合經典與非經典表位的衰老細胞清除疫苗" data-en="First senolytic vaccine combining canonical and non-canonical epitopes">首个结合经典与非经典表位的衰老细胞清除疫苗</span>
+                    </div>
+                    <div class="pipeline-stage-col active"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                    <div class="pipeline-stage-col"></div>
+                </div>
+            </div>
+            <div class="pipeline-legend">
+                <span><i class="fas fa-circle done-dot"></i> <span data-zh="已完成" data-tw="已完成" data-en="Completed">已完成</span></span>
+                <span><i class="fas fa-circle active-dot"></i> <span data-zh="进行中" data-tw="進行中" data-en="In Progress">进行中</span></span>
+                <span><i class="fas fa-circle empty-dot"></i> <span data-zh="计划中" data-tw="計畫中" data-en="Planned">计划中</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术平台 -->
+    <section class="technology section-padding" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="技术平台 (AuNov)" data-tw="技術平台 (AuNov)" data-en="Technology Platform (AuNov)">技术平台 (AuNov)</span></h2>
+                <p class="section-subtitle"><span data-zh="从表位发现到临床验证的全流程AI增强平台" data-tw="從表位發現到臨床驗證的全流程AI增強平台" data-en="End-to-end AI-enhanced platform from epitope discovery to clinical validation">从表位发现到临床验证的全流程AI增强平台</span></p>
+            </div>
+            <div class="tech-flow">
+                <div class="tech-step">
+                    <div class="tech-step-number">01</div>
+                    <div class="tech-step-icon"><i class="fas fa-database"></i></div>
+                    <h4><span data-zh="多组学数据挖掘" data-tw="多組學資料探勘" data-en="Multi-omics Data Mining">多组学数据挖掘</span></h4>
+                    <p><span data-zh="从多队列、多组学、多平台测序数据中发现新表位，200万+肿瘤新肽段初筛" data-tw="從多隊列、多組學、多平台定序資料中發現新表位，200萬+腫瘤新胜肽段初篩" data-en="Discovering neoepitopes from multi-cohort, multi-omics, multi-platform sequencing data. 2M+ tumor neo-peptides initial screening.">从多队列、多组学、多平台测序数据中发现新表位，200万+肿瘤新肽段初筛</span></p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-step-number">02</div>
+                    <div class="tech-step-icon"><i class="fas fa-brain"></i></div>
+                    <h4><span data-zh="AI算法优化" data-tw="AI演算法優化" data-en="AI Algorithm Optimization">AI算法优化</span></h4>
+                    <p><span data-zh="通过AI专有算法(AuPrv)和数据库优化肿瘤特异性新表位，去除99.9%假阳性，筛出2000个候选表位" data-tw="透過AI專有演算法(AuPrv)和資料庫優化腫瘤特異性新表位，去除99.9%偽陽性，篩出2000個候選表位" data-en="Optimizing tumor-specific neoepitopes via proprietary AI algorithm (AuPrv). Removing 99.9% false positives, filtering 2,000 candidate epitopes.">通过AI专有算法(AuPrv)和数据库优化肿瘤特异性新表位，去除99.9%假阳性，筛出2000个候选表位</span></p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-step-number">03</div>
+                    <div class="tech-step-icon"><i class="fas fa-flask"></i></div>
+                    <h4><span data-zh="细胞与动物验证" data-tw="細胞與動物驗證" data-en="Cellular &amp; Animal Validation">细胞与动物验证</span></h4>
+                    <p><span data-zh="在细胞实验和mRNA-LNP平台上验证肿瘤多价新表位和疫苗配方，免疫原性T细胞应答率达48.3%-70%" data-tw="在細胞實驗和mRNA-LNP平台上驗證腫瘤多價新表位和疫苗配方，免疫原性T細胞反應率達48.3%-70%" data-en="Validating polyvalent neoepitopes and vaccine formulations on cellular and mRNA-LNP platforms. T-cell response rate: 48.3%-70%.">在细胞实验和mRNA-LNP平台上验证肿瘤多价新表位和疫苗配方，免疫原性T细胞应答率达48.3%-70%</span></p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-step-number">04</div>
+                    <div class="tech-step-icon"><i class="fas fa-hospital"></i></div>
+                    <h4><span data-zh="临床试验" data-tw="臨床試驗" data-en="Clinical Trials">临床试验</span></h4>
+                    <p><span data-zh="在临床实验中心开展肿瘤多价新表位疫苗的临床试验，推进从实验台到临床的转化" data-tw="在臨床實驗中心開展腫瘤多價新表位疫苗的臨床試驗，推進從實驗台到臨床的轉化" data-en="Conducting clinical trials of polyvalent neoepitope vaccines at clinical centers. Advancing bench-to-bedside translation.">在临床实验中心开展肿瘤多价新表位疫苗的临床试验，推进从实验台到临床的转化</span></p>
+                </div>
+            </div>
+            <div class="tech-metrics">
+                <div class="metric-card">
+                    <div class="metric-number">2,000,000</div>
+                    <div class="metric-label" data-zh="肿瘤新肽段" data-tw="腫瘤新胜肽段" data-en="Tumor Neo-peptides">肿瘤新肽段</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">2,000</div>
+                    <div class="metric-label" data-zh="候选表位" data-tw="候選表位" data-en="Candidate Epitopes">候选表位</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">30</div>
+                    <div class="metric-label" data-zh="免疫原性表位" data-tw="免疫原性表位" data-en="Immunogenic Epitopes">免疫原性表位</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">48.3%</div>
+                    <div class="metric-label" data-zh="体外T细胞应答率" data-tw="體外T細胞反應率" data-en="In vitro T-cell Response">体外T细胞应答率</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 竞争优势 -->
+    <section class="advantages section-padding" id="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="六大竞争优势" data-tw="六大競爭優勢" data-en="Six Competitive Edges">六大竞争优势</span></h2>
+                <p class="section-subtitle"><span data-zh="从研发、商业化到临床的全方位竞争壁垒" data-tw="從研發、商業化到臨床的全方位競爭壁壘" data-en="Comprehensive competitive moats from R&amp;D and commercialization to clinic">从研发、商业化到临床的全方位竞争壁垒</span></p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">I</div>
+                    <h3><span data-zh="从实验台到临床的无缝管线" data-tw="從實驗台到臨床的無縫管線" data-en="Seamless Pipeline: Bench to Bed">从实验台到临床的无缝管线</span></h3>
+                    <p><span data-zh="完整的科学发现→临床前研究→临床试验→NMPA审批全流程能力，多学科团队协作保障。" data-tw="完整的科學發現→臨床前研究→臨床試驗→NMPA審批全流程能力，多學科團隊協作保障。" data-en="Full-spectrum capability: scientific discovery → pre-clinical → clinical trials → NMPA approval. Backed by multidisciplinary team collaboration.">完整的科学发现→临床前研究→临床试验→NMPA审批全流程能力，多学科团队协作保障。</span></p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">II</div>
+                    <h3><span data-zh="更优的表位质量" data-tw="更優的表位品質" data-en="Superior Epitope Quality">更优的表位质量</span></h3>
+                    <p><span data-zh="在表位数量、质量和特异性方面优于现有竞争产品。克服了个体化疫苗中表位不足的难题。" data-tw="在表位數量、品質和特異性方面優於現有競爭產品。克服了客製化疫苗中表位不足的難題。" data-en="Superior in epitope quantity, quality and specificity vs. competing products. Solves the insufficient epitope problem in personalized vaccines.">在表位数量、质量和特异性方面优于现有竞争产品。克服了个体化疫苗中表位不足的难题。</span></p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">III</div>
+                    <h3><span data-zh="针对不同人群的优化设计" data-tw="針對不同人群的優化設計" data-en="Population-Optimized Design">针对不同人群的优化设计</span></h3>
+                    <p><span data-zh="基础设计可针对不同地区的高频HLA分型进行优化，特别适用于亚洲人群。" data-tw="基礎設計可針對不同地區的高頻HLA分型進行優化，特別適用於亞洲人群。" data-en="Underlying design targets high-frequency HLA typing for different regions. Especially optimized for Asian populations.">基础设计可针对不同地区的高频HLA分型进行优化，特别适用于亚洲人群。</span></p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">IV</div>
+                    <h3><span data-zh="知识产权蓝海" data-tw="智慧財產權藍海" data-en="Blue Ocean in IP">知识产权蓝海</span></h3>
+                    <p><span data-zh="非经典来源新抗原相关专利仅占8.6%，已获得2项美国专利，IP领域处于蓝海阶段。" data-tw="非經典來源新抗原相關專利僅占8.6%，已獲得2項美國專利，IP領域處於藍海階段。" data-en="Non-canonical neoantigen patents account for only 8.6%. 2 US patents secured. IP space is a blue ocean.">非经典来源新抗原相关专利仅占8.6%，已获得2项美国专利，IP领域处于蓝海阶段。</span></p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">V</div>
+                    <h3><span data-zh="现货型疫苗" data-tw="現貨型疫苗" data-en="Off-the-Shelf Vaccines">现货型疫苗</span></h3>
+                    <p><span data-zh="相比个体化疫苗大幅降低成本，同时保持人群覆盖率。在订货周期、工艺稳定性和临床可执行性上均具优势。" data-tw="相比客製化疫苗大幅降低成本，同時保持人群覆蓋率。在訂貨週期、製程穩定性和臨床可執行性上均具優勢。" data-en="Significantly lower costs vs. personalized vaccines while maintaining population coverage. Superior in order cycle, process stability and clinical feasibility.">相比个体化疫苗大幅降低成本，同时保持人群覆盖率。在订货周期、工艺稳定性和临床可执行性上均具优势。</span></p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">VI</div>
+                    <h3><span data-zh="泛癌种可复制性" data-tw="泛癌種可複製性" data-en="Pan-Cancer Replicability">泛癌种可复制性</span></h3>
+                    <p><span data-zh="完整技术路线可复制，已在胰腺癌、鼻咽癌和胶质母细胞瘤积累了有说服力的数据。" data-tw="完整技術路線可複製，已在胰臟癌、鼻咽癌和膠質母細胞瘤累積了有說服力的資料。" data-en="Complete technical route is replicable. Compelling data accumulated in pancreatic cancer, nasopharyngeal carcinoma and glioblastoma.">完整技术路线可复制，已在胰腺癌、鼻咽癌和胶质母细胞瘤积累了有说服力的数据。</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场与合作伙伴 -->
+    <section class="market section-padding" id="market">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="市场前景与合作伙伴" data-tw="市場前景與合作夥伴" data-en="Market Outlook &amp; Partners">市场前景与合作伙伴</span></h2>
+                <p class="section-subtitle"><span data-zh="全球肿瘤疫苗市场超百亿美元，年复合增长率>15%" data-tw="全球腫瘤疫苗市場超百億美元，年複合成長率>15%" data-en="Global tumor vaccine market exceeds $10B, CAGR &gt;15%">全球肿瘤疫苗市场超百亿美元，年复合增长率>15%</span></p>
+            </div>
+            <div class="market-content">
+                <div class="market-stats">
+                    <div class="market-stat-card">
+                        <div class="market-stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="market-stat-number">$10B+</div>
+                        <div class="market-stat-desc"><span data-zh="全球肿瘤疫苗市场规模 (2024)" data-tw="全球腫瘤疫苗市場規模 (2024)" data-en="Global Tumor Vaccine Market (2024)">全球肿瘤疫苗市场规模 (2024)</span></div>
+                    </div>
+                    <div class="market-stat-card">
+                        <div class="market-stat-icon"><i class="fas fa-arrow-up"></i></div>
+                        <div class="market-stat-number">&gt;15%</div>
+                        <div class="market-stat-desc"><span data-zh="年复合增长率 (CAGR)" data-tw="年複合成長率 (CAGR)" data-en="Compound Annual Growth Rate (CAGR)">年复合增长率 (CAGR)</span></div>
+                    </div>
+                    <div class="market-stat-card">
+                        <div class="market-stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="market-stat-number">&gt;90%</div>
+                        <div class="market-stat-desc"><span data-zh="非经典表位人群覆盖率" data-tw="非經典表位人群覆蓋率" data-en="Non-canonical Epitope Population Coverage">非经典表位人群覆盖率</span></div>
+                    </div>
+                    <div class="market-stat-card">
+                        <div class="market-stat-icon"><i class="fas fa-globe"></i></div>
+                        <div class="market-stat-number">$40B</div>
+                        <div class="market-stat-desc"><span data-zh="非经典表位潜在市场空间" data-tw="非經典表位潛在市場空間" data-en="Non-canonical Epitope Market Potential">非经典表位潜在市场空间</span></div>
+                    </div>
+                </div>
+                <div class="partners-section">
+                    <h3><span data-zh="合作伙伴" data-tw="合作夥伴" data-en="Partners">合作伙伴</span></h3>
+                    <div class="partners-grid">
+                        <div class="partner-type">
+                            <h4><i class="fas fa-industry"></i> <span data-zh="产业合作" data-tw="產業合作" data-en="Industrial Partnerships">产业合作</span></h4>
+                            <p><span data-zh="与 Saint Novel、阿斯利康 (AstraZeneca)、Innorna、Jotbody 在疫苗开发、小分子药物组合方案和LNP配方方面开展合作。" data-tw="與 Saint Novel、阿斯特捷利康 (AstraZeneca)、Innorna、Jotbody 在疫苗開發、小分子藥物組合方案和LNP配方方面開展合作。" data-en="Collaborating with Saint Novel, AstraZeneca, Innorna, and Jotbody on vaccine development, small molecule drug combination schemes and LNP formulations.">与 Saint Novel、阿斯利康 (AstraZeneca)、Innorna、Jotbody 在疫苗开发、小分子药物组合方案和LNP配方方面开展合作。</span></p>
+                        </div>
+                        <div class="partner-type">
+                            <h4><i class="fas fa-hospital"></i> <span data-zh="临床合作" data-tw="臨床合作" data-en="Clinical Partnerships">临床合作</span></h4>
+                            <p><span data-zh="已与浙江省肿瘤医院、江苏省人民医院、树兰（杭州）医院建立临床合作关系，开展IIT和临床试验。" data-tw="已與浙江省腫瘤醫院、江蘇省人民醫院、樹蘭（杭州）醫院建立臨床合作關係，開展IIT和臨床試驗。" data-en="Clinical partnerships established with Zhejiang Cancer Hospital, Jiangsu Provincial People's Hospital, and Shulan (Hangzhou) Hospital for IITs and clinical trials.">已与浙江省肿瘤医院、江苏省人民医院、树兰（杭州）医院建立临床合作关系，开展IIT和临床试验。</span></p>
+                        </div>
+                        <div class="partner-type">
+                            <h4><i class="fas fa-award"></i> <span data-zh="荣誉与资助" data-tw="榮譽與資助" data-en="Awards &amp; Funding">荣誉与资助</span></h4>
+                            <p><span data-zh="获CUHK IdeaBooster、TSSSU、IGNITE@HSITP等资助；第51届日内瓦国际发明展 (IEIG) 两项金奖。" data-tw="獲CUHK IdeaBooster、TSSSU、IGNITE@HSITP等資助；第51屆日內瓦國際發明展 (IEIG) 兩項金獎。" data-en="Awarded CUHK IdeaBooster, TSSSU, IGNITE@HSITP. Two Gold Medals at the 51st International Exhibition of Inventions Geneva (IEIG), 2026.">获CUHK IdeaBooster、TSSSU、IGNITE@HSITP等资助；第51届日内瓦国际发明展 (IEIG) 两项金奖。</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span data-zh="联系我们" data-tw="聯絡我們" data-en="Contact Us">联系我们</span></h2>
+                <p class="section-subtitle"><span data-zh="欢迎与我们探讨合作机会" data-tw="歡迎與我們探討合作機會" data-en="We welcome the opportunity to discuss collaboration">欢迎与我们探讨合作机会</span></p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-zh="办公地址" data-tw="辦公地址" data-en="Address">办公地址</h4>
+                            <p>Unit 2A, Innoport, CUHK<br><span data-zh="香港中文大学创新港" data-tw="香港中文大學創新港" data-en="The Chinese University of Hong Kong">香港中文大学创新港</span></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-zh="电子邮箱" data-tw="電子郵件" data-en="Email">电子邮箱</h4>
+                            <p>meinetbosekampf@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-zh="联系电话" data-tw="聯絡電話" data-en="Phone">联系电话</h4>
+                            <p>(+852) 6150 8997</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" data-zh-placeholder="您的姓名" data-tw-placeholder="您的姓名" data-en-placeholder="Your Name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" data-zh-placeholder="电子邮箱" data-tw-placeholder="電子郵件" data-en-placeholder="Email Address" placeholder="电子邮箱" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" data-zh-placeholder="主题" data-tw-placeholder="主題" data-en-placeholder="Subject" placeholder="主题">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" data-zh-placeholder="留言内容" data-tw-placeholder="留言內容" data-en-placeholder="Your Message" placeholder="留言内容" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><span data-zh="发送消息" data-tw="發送訊息" data-en="Send Message">发送消息</span> <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">A</span>
+                        <span class="logo-text">AuroraEpitope</span>
+                    </a>
+                    <p>Illuminating cancer darkness with the light of non-canonical neoepitopes.</p>
+                    <p class="footer-chinese"><span data-zh="啟明星位 — 以非经典新表位之光，照亮癌症黑暗" data-tw="啟明星位 — 以非經典新表位之光，照亮癌症黑暗" data-en="AuroraEpitope — Illuminating cancer darkness with the light of non-canonical neoepitopes">啟明星位 — 以非经典新表位之光，照亮癌症黑暗</span></p>
+                </div>
+                <div class="footer-links">
+                    <h4><span data-zh="快速导航" data-tw="快速導覽" data-en="Quick Links">快速导航</span></h4>
+                    <ul>
+                        <li><a href="#about"><span data-zh="关于我们" data-tw="關於我們" data-en="About">关于我们</span></a></li>
+                        <li><a href="#services"><span data-zh="核心业务" data-tw="核心業務" data-en="Services">核心业务</span></a></li>
+                        <li><a href="#team"><span data-zh="核心团队" data-tw="核心團隊" data-en="Team">核心团队</span></a></li>
+                        <li><a href="#pipeline"><span data-zh="产品管线" data-tw="產品管線" data-en="Pipeline">产品管线</span></a></li>
+                        <li><a href="#technology"><span data-zh="技术平台" data-tw="技術平台" data-en="Technology">技术平台</span></a></li>
+                        <li><a href="#contact"><span data-zh="联系我们" data-tw="聯絡我們" data-en="Contact">联系我们</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4><span data-zh="联系方式" data-tw="聯絡方式" data-en="Contact Info">联系方式</span></h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Unit 2A, Innoport, CUHK</p>
+                    <p><i class="fas fa-envelope"></i> meinetbosekampf@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+852) 6150 8997</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AuroraEpitope Ltd. <span data-zh="保留所有权利" data-tw="保留所有權利" data-en="All rights reserved">保留所有权利</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

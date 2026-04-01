@@ -1,7 +1,7 @@
 // ===== Language Switch =====
 const langSwitch = document.getElementById('langSwitch');
 const langBtns = langSwitch.querySelectorAll('.lang-btn');
-let currentLang = 'zh';
+let currentLang = 'en';
 
 function switchLanguage(lang) {
     currentLang = lang;

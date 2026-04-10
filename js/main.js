@@ -115,23 +115,31 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ===== Contact Form =====
+// ===== Contact Form → mailto =====
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
 
     if (!name || !email || !message) return;
 
+    const to = 'meinetbosekampf@gmail.com';
+    const mailSubject = encodeURIComponent(subject || `[AuroraEpitope] Message from ${name}`);
+    const mailBody = encodeURIComponent(
+        `From: ${name} (${email})\n\n${message}`
+    );
+    window.location.href = `mailto:${to}?subject=${mailSubject}&body=${mailBody}`;
+
     const btn = contactForm.querySelector('button[type="submit"]');
     const originalHTML = btn.innerHTML;
     const sentTexts = {
-        zh: '<i class="fas fa-check"></i> 已发送',
-        tw: '<i class="fas fa-check"></i> 已發送',
-        en: '<i class="fas fa-check"></i> Sent'
+        zh: '<i class="fas fa-check"></i> 正在打开邮件客户端…',
+        tw: '<i class="fas fa-check"></i> 正在打開郵件客戶端…',
+        en: '<i class="fas fa-check"></i> Opening email client…'
     };
     btn.innerHTML = sentTexts[currentLang] || sentTexts.en;
     btn.style.pointerEvents = 'none';
@@ -140,7 +148,7 @@ contactForm.addEventListener('submit', (e) => {
         contactForm.reset();
         btn.innerHTML = originalHTML;
         btn.style.pointerEvents = '';
-    }, 2000);
+    }, 2500);
 });
 
 // ===== Smooth scroll for anchor links =====
